@@ -28,7 +28,7 @@ const u = (id: string, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`;
 
 const PHOTOS = {
-  hero:    u("1608569569089-5d2e3e644ea6", 1800),
+  hero: "/hero.png",
   about:   u("1477281765962-ef34e8bb0967"),
   event1:  u("1507692049790-de58290a4334", 800),
   event2:  u("1497621122273-f5cfb6065c56", 800),
@@ -226,8 +226,8 @@ export default function Home() {
 
         {/* ── HERO ── */}
         <section className="relative overflow-hidden bg-[#0A0A0A]">
-          <div className="absolute inset-0 bg-cover bg-right opacity-30" style={img(PHOTOS.hero)} aria-hidden />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/85 to-transparent" aria-hidden />
+          <div className="absolute inset-0 bg-cover bg-center opacity-60" style={img(PHOTOS.hero)} aria-hidden />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/90 via-[#0A0A0A]/60 to-transparent" aria-hidden />
 
           <div className="relative mx-auto max-w-7xl px-6 py-20 md:py-28">
             <div className="max-w-xl">
